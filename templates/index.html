@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Notes</title>
+  <style>
+    body { font-family: sans-serif; max-width: 600px; margin: 2rem auto; }
+    .note { border: 1px solid #ccc; padding: 0.5rem 1rem; margin: 0.5rem 0; }
+    .note p { margin: 0 0 0.25rem; }
+    .delete-btn { background: #e04040; color: #fff; border: 0; padding: 0.2rem 0.5rem; cursor: pointer; }
+    #note-form { display: flex; gap: 0.5rem; }
+    #note-form input { flex: 1; padding: 0.4rem; }
+  </style>
+</head>
+<body>
+  <h1>Notes</h1>
+  <form id="note-form">
+    <input id="note-input" placeholder="Type a note..." />
+    <button type="submit">Add</button>
+  </form>
+  <div id="note-list"></div>
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
